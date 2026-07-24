@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afzal Imtiyaz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="#about" class="logo"><span class="prompt"></span>Afzal</a>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="tab active" data-tab="about"><span class="dot"></span>about</a></li>
+        <li><a href="#projects" class="tab" data-tab="projects"><span class="dot"></span>projects</a></li>
+        <li><a href="#contact" class="tab" data-tab="contact"><span class="dot"></span>contact</a></li>
+      </ul>
+
+      <button id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <span class="toggle-track">
+          <span class="toggle-thumb"></span>
+        </span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="about" class="editor-pane hero">
+      <div class="gutter" aria-hidden="true">
+        <span>01</span><span>02</span><span>03</span><span>04</span><span>05</span>
+      </div>
+      <div class="pane-content">
+        <p class="eyebrow">// about</p>
+        <h1 class="hero-name">Afzal<span class="cursor" aria-hidden="true"></span></h1>
+        <p class="hero-role">Aspiring Software Engineer</p>
+        <p class="hero-bio">
+          I'm Afzal Imtiyaz, a Software Engineering student who enjoys turning ideas
+          into practical software solutions. My interests include Java, SQL, web
+          development, and automation. Outside the classroom, I lead a production
+          team at Innodata, where I've developed problem-solving, leadership, and
+          quality assurance skills. I'm always looking for opportunities to learn,
+          build, and contribute to meaningful projects.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">view projects</a>
+          <a href="#contact" class="btn btn-ghost">say hello</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="eyebrow">// projects</p>
+      <h2>Recent work</h2>
+      <p class="section-sub">  Whether it's software development, collaboration, freelance opportunities,
+      or simply talking about technology, I'd be happy to connect with you.</p>
+      <div id="repo-list" class="grid">
+        <div class="repo-card">
+          <h3 class="repo-title">
+            <span class="lang-dot" style="background:#4C5FD5"></span>
+            Data Capturing Tool
+          </h3>
+          <p>A tool built to streamline and simplify the process of capturing and organizing data.</p>
+          <a href="https://afzal-imtiyaz.github.io/Data-capturing-Tool/" target="_blank" rel="noopener">open project →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="eyebrow">// contact</p>
+      <h2>Get in touch</h2>
+      <p class="section-sub">Have a project, a question, or a bug report? Open a line below.</p>
+
+      <form id="contact-form" class="terminal-form">
+        <div class="field">
+          <label for="name"><span class="field-prompt">$</span> name</label>
+          <input id="name" type="text" placeholder="Jane Doe" required>
+        </div>
+        <div class="field">
+          <label for="email"><span class="field-prompt">$</span> email</label>
+          <input id="email" type="email" placeholder="jane@example.com" required>
+        </div>
+        <div class="field">
+          <label for="message"><span class="field-prompt">$</span> message</label>
+          <textarea id="message" rows="4" placeholder="Tell me what's on your mind..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <span class="field-prompt">$</span> send message
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="social-block">
+      <p class="social-tag">Think. Build. Deliver.</p>
+      <ul class="social-links">
+        <li>
+          <a href="https://github.com/afzal-imtiyaz" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2-.2 4.5-1 4.5-4.5 0-1-.4-2-1-2.7.1-.3.4-1.4-.1-3 0 0-.8-.3-2.8 1a9.6 9.6 0 0 0-5 0c-2-1.3-2.8-1-2.8-1-.5 1.6-.2 2.7-.1 3-.6.7-1 1.7-1 2.7 0 3.5 2.5 4.3 4.5 4.5-.3.3-.5.7-.5 1.3V19" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/afzal-imtiyaz-9b06b22a8/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6.5 8.5v9M6.5 5.5v.01M11 17.5v-5.2c0-1.8 1.2-3.3 3-3.3 1.7 0 2.5 1.2 2.5 3.3v5.2" />
+              <path d="M11 12.3V17.5" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/xfzxl_imtiyxz._" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4.5" y="4.5" width="15" height="15" rx="4" />
+              <circle cx="12" cy="12" r="3.3" />
+              <circle cx="16.2" cy="7.8" r="0.6" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/xfzxl_imtiyxz._" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.5 8.5h-2c-.8 0-1.3.6-1.3 1.4v2h3.2l-.4 3h-2.8v6h-3v-6H6v-3h2.2V9.5c0-2.2 1.5-3.8 3.7-3.8h2.6v2.8Z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p><span class="prompt"></span>&copy; 2026 Afzal Imtiyaz. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
